@@ -6,7 +6,7 @@ function addToCart(name, price) {
     if (item) {
         item.qty++;
     } else {
-        cart.push({ name, price, qty: 1 });
+        cart.push({ name, price, qty: 2 });
     }
     updateCart();
 }
@@ -50,3 +50,4 @@ function removeItem(index) {
     cart.splice(index, 1);
     updateCart();
 }
+

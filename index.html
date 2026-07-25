@@ -7,8 +7,8 @@
 </head>
 <body>
     <center>
-    <h1>THE GIFTING GALLERY🎁</h1>
-    <h3>New deferant gift's</h3>
+    <H1>THE GIFTING GALLERY🎁</H1>
+    <H5>New deferant gift's</H5>
     <p>We believe that the best gifts aren't just objects—they are memories 
         frozen in time, warm hugs sent across distances, and quiet ways of saying "you mean theworld to me."
         Whether you’re celebrating a milestone birthday, sending love across the miles, or searching
@@ -56,47 +56,48 @@
        </center>
        <hr>
        <div class="container">
-        <div class="product">
-            <div class="product-cart">
-                <img src="image 1.jpg" alt="logo" width="200px">
-                <h3>App logo</h3>
-                <p class="Price">1000</p>
-                <button onclick="addtocart('App logo',1000)">Add to cart</button>
-                <div class="container"></div>
-            </div>        
-        </div>    
 
-        <div class="product">
-            <div class="product-cart">
-                <img src="image 2.jpg" alt="logo" width="200px">
-                <h3>App logo</h3>
-                <p class="Price">1000</p>
-                <button onclick="addtocart('App logo',1000)">Add to cart</button>
-                <div class="container"></div>
-            </div>        
+    <!-- PRODUCTS -->
+    <div class="products">
+
+        <div class="product-card">
+            <img src="image 4.jpg" alt="Phone">
+            <h3>Smart Phone</h3>
+            <p class="price">₹10,000</p>
+            <button onclick="addToCart('Smart Phone', 10000)">Add to Cart</button>
         </div>
-        <div class="product">
-            <div class="product-cart">
-                <img src="image 3.jpg" alt="logo" width="200px">
-                <h3>App logo</h3>
-                <p class="Price">1000</p>
-                <button onclick="addtocart('App logo',1000)">Add to cart</button>
-                <div class="container"></div>
-            </div>
-        </div>       
-         <div class="product">
-            <div class="product-cart">
-                <img src="image 4.jpg" alt="logo" width="200px">
-                <h3>App logo</h3>
-                <p class="Price">1000</p>
-                <button onclick="addtocart('App logo',1000)">Add to cart</button>
-                <div class="container"></div>
-            </div>        
+
+        <div class="product-card">
+            <img src="image 2.jpg" alt="Headphones">
+            <h3>Headphones</h3>
+            <p class="price">₹2,000</p>
+            <button onclick="addToCart('Headphones', 2000)">Add to Cart</button>
         </div>
+
+        <div class="product-card">
+            <img src="image 3.jpg" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₹3,500</p>
+            <button onclick="addToCart('Smart Watch', 3500)">Add to Cart</button>
+        </div>
+
+    </div>
+    
+
+    <!-- CART -->
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <div class="total-box">
+            Total: ₹<span id="total">0</span>
+        </div>
+    </div>
+<hr>
+</div>
         <script src="script.js"></script>                  
        <center>
-    <hr>
-    <hr>
+        <hr>
+     <a href="page 1.html">Next page</a>
     </center>
 </body>
 </html>
